@@ -1,0 +1,72 @@
+Uninformed Search (DFS, BFS, UCS)
+ - operates on models of the world
+ - agent doesn't try anything
+ - everything planned in simulation
+ - search is only as good as model
+ - starts at a state, makes an action, checks the result, repeats
+ - states
+ - actions
+ - successor function (world dynamics)
+ - systematicall builds a search tree
+ - chooses an ordering of the fringe nodes
+
+Informed Search (Greedy, A*)
+ - same as uninformed search
+ - uses heuristics to tell how close to goal
+ - heuristic indicates which way to head by taking state and returning number
+
+CSP (Constraint Satisfaction Problems)
+ - subset of search problem
+ - just a smarter version of DFS/BFS/UCS that checks constraints along the way
+ - assumptions of what goes into state
+ - goal test is a set of constraints saying what is allowed
+ - map colouring can judge along the way based of set of rules.
+
+Adverserial Search
+ - variant of search which considers enemies movements by looking a few steps aheda
+ - evaluation functions for depth limited searches
+ - minimax, expectimax
+
+
+Markov Decision Processes (MDPs)
+ - non-deterministic search problems
+ - search where outcomes are uncertain
+ - movement may fail
+ - come up with plan on which actions to take in which location based on probabilities
+ - run value iteration or expectimax
+ - work out everything you should do in advance
+ - offline
+
+Reinforcement Learning (e.g. QLearning)
+ - take an action, receive a reward an state
+ - don't know what actions will produce a reward
+ - can only see what happens, not what might have happened
+ - assume a MDP
+ - set of states
+ - don't know the transition function like in a MDP
+ - must try actions to get probabilities and rewards for the transition and reward function.
+ - online
+
+Bayes' Nets
+ - probabilistic graph model
+ - represent the probabilities between different variables
+ - particle filtering
+ - you roughly know where things are, but not sure
+
+Hidden Markov Models (HMMs)
+ - a chain-structured Bayes Net
+ - each node is identically distributed (stationary)
+
+Machine Learning (Perceptrons,MIRA, Kernels, Clustering, Decision Trees and Neural Nets)
+ - MIRA uses a weight vectors across features to determine probabilities of states
+ - weigth vectors updated according to a variable weight when training
+ - strength of classifiers comes from quality of features
+
+
+
+Supervised Learning
+ - classification learning, e.g. classing spam/not spam given a data set
+
+Unsupervised Learning
+ - no classification information
+ - grouping people into regions based on similar characteristics wit hno prior knowledge.

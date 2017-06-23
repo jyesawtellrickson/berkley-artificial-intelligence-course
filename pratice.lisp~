@@ -1,0 +1,16 @@
+(defun sqrt-iter (a g)
+  (if (goodenough? a g)
+      guess
+      (sqrt-iter a (imgu a g))))
+
+(defun goodenough? (a g)
+  (< (abs (- a (square g))) 0.001))
+
+(defun imgu (a g)
+  (avg g (/ a g)))
+
+(defun square (x)
+  (* x x))
+
+(defun avg (a b)
+  (/ (+ a b)))
